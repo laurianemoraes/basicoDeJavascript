@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeira encontro</title>
+</head>
+<body>
+    <div id="app">
+        
+        
+    </div>
+    <script >
+        //criação de um campo de texto e um botão
+        //<input type="text" name="nome" id="nome">
+        //<button class="botao">botão</button>
+
+        //mostrando os principais tipos de variaveis no console
+        /*var nome="Diego";
+        var idade=23;
+        var peso=80.5;
+        var humano =true;
+
+        var alunos = ['Diego','Gabriel','Luca'];
+
+        var aluno = {
+            nome : 'Diego',
+            idade : 23,
+            peso : 80.5,
+            humano:true
+        };*/
+
+        //para mostar o um vetor usa-se (aluno[1]) para mostrar objeto usa-se (aluno.peso)
+
+        //operações matemáticas
+        /*var x = 10 , y =3
+        //var y = 3
+
+        x *= y;
+        // x = x * y;*/
+
+        //funções no javascript
+        //soma dois números
+        /*function soma(numero1, numero2){
+            var resultado = numero1 + numero2;
+
+            return resultado;
+        }
+
+        var resultado = soma(1,2);*/
+
+        //estrutura condicional if e else
+        /*
+        function retornaSexo(sexo){
+            if(sexo === 'M'){
+                return 'Masculino';
+            }
+            else if(sexo ==='F'){
+                return'Feminino';
+            }
+            else{
+                return 'Outro';
+            }
+        }
+
+        var resultado = retornaSexo('F');*/
+
+        //caso
+        /*
+        function retornaSexo(sexo){
+            switch (sexo){
+                case 'M':
+                    return 'Masculino';
+                    
+                case 'F':
+                    return 'Feminino';
+
+                default:
+                    return 'Outro';
+            }
+        }
+
+        var resultado = retornaSexo('F');*/
+        
+        //operadores lógicos AND(&&), OR(||), NOT (!==)
+        /*var sexo ='M', idade = 23;
+
+        if(sexo ==='M' && idade >=18){
+            console.log('OK');
+        }*/
+       
+        
+        /*var sexo = 'F';
+
+        var masculino = sexo ==='M';
+
+        if(sexo ==='M'){
+            masculino = true;
+        }
+        else{
+            masculino = false;
+        }
+
+        console.log(masculino);*/
+
+        //condição ternaria quando só tem um fi e um else
+        /*var sexo = 'M';
+        if(sexo==='M'){
+            return 'Masculino';
+        }
+        else{
+            return 'Feminino'
+        }
+        //var retorno = (sexo==='M')? 'Masculino':'Feminina';
+        console.log(retorno)*/
+
+        //exibir algo em um tempo determinado
+        /*function exibeAlgo(){
+            console.log('hello word');
+
+        }
+        setTimeout(exibeAlgo, 5000);*/
+
+        //controlando a dom com javascript
+        /*function mostrarAlerta(){
+            alert('Botão foi clicado');
+        }*/
+
+        /*mostrar mensagem com o texto que foi insido no input
+        var inputElement = document.querySelector('input[name=nome]');
+        var btnElement= document.querySelector('button.botao');
+
+        btnElement.onclick = function(){
+            var text = inputElement.value;
+
+            alert(text)
+        }*/
+        
+        var linkElement = document.createElement('a');
+
+        linkElement.setAttribute('href','https://virtual.ifro.edu.br/jiparana/login/index.php');
+
+        var textElement = document.createTextNode('página inicial do ifro');
+
+        linkElement.appendChild(textElement);
+        var containerElement = document.querySelector('#app');
+        containerElement.appendChild(linkElement);
+    </script>
+</body>
+
+</html>
