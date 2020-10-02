@@ -1,79 +1,5 @@
-//impressão de um valor em tela
-/*var nota;
-nota = 100;
-alert("resultado: " + nota);*/
-
-//comentário em linha
-/*comentário em bloco pode abranger mais de uma linha*/
-
-//código recebe e imprime o valor digitado
-var nome, idade;
-nome = prompt("Digite seu nome: ")//leia no visualg, prompt é a janelinha
-idade = prompt("Digite sua idade: ")
-alert("o nome digitado foi:" + nome)//escreval no visualg 
-alert("a idade digitada foi:" + idade)
-
-
-/* media escolar  estrutura condicional
-var nome, nota1, nota2, media;
-nome = prompt("Digite o nome do aluno: ")
-nota1 = prompt("Digite a primeira nota so aluno:")
-nota2 = prompt("Digite a segunda nota so aluno:")
-
-media = (parseInt(nota1) + parseInt(nota2))/2 //parseInt trasnforma uma string em um inteiro
-
-if(media >= 60){
-    alert("Aprovado " + nome)
-}
-else
-    alert("Reprovado " + nome)*/
-
-
-/* media escolar usando condicional    
-var nome, nota1, nota2, passou;
-
-passou = false;
-
-nome = prompt("Digite o nome do aluno: ")
-nota1 = prompt("Digite a primeira nota so aluno:")
-nota2 = prompt("Digite a segunda nota so aluno:")
-
-media = (parseInt(nota1) + parseInt(nota2))/2 //parseInt trasnforma uma string em um inteiro
-
-if(media >= 60)
-    passou = true;
-
-if(passou)
-    alert("Aprovado " + nome)
-
-else
-    alert("Reprovado " + nome) */
-
-/* código de media escolar usando false
-    var nome, nota1, nota2, passou;
-
-    passou = false;
-    
-    nome = prompt("Digite o nome do aluno: ")
-    nota1 = prompt("Digite a primeira nota so aluno:")
-    nota2 = prompt("Digite a segunda nota so aluno:")
-    
-    media = (parseInt(nota1) + parseInt(nota2))/2 //parseInt trasnforma uma string em um inteiro
-    
-    if(media >= 60)
-        passou = true;
-    
-    if(!passou && media>=70) //conjunção os dois tem que ser verdadeiro &&
-                            //disjunção || ou um ou outro tem que ser verdadeiro
-                            // disjunção exclusiva if (passou &&(media >=70 && media <=90))
-        alert("Aprovado " + nome)
-    
-    else
-        alert("Reprovado " + nome) */
-    
-
-/* calculadora if e else aninhados dentro de uma função
-function iniciar(){
+//calculadora if e else aninhados dentro de uma função
+function acaoBotao(){
     var valor1, valor2, resultado, operacao
     
     valor1 = prompt("digite o primeiro valor :")
@@ -94,15 +20,15 @@ function iniciar(){
     }
 
     document.getElementById("paragrafo").innerText = resultado
-    } */
+    } 
 
-/* calculadora case
-    function iniciar(){
+//calculadora case
+   /* function acaoBotao(){
         var valor1, valor2, resultado, operacao
         
         valor1 = prompt("digite o primeiro valor :")
         operacao = prompt("selecione sua operação :")
-        valor2 = prompt("digite o segundo valor :")
+        valor2 = prompt("digite o segunacaoBotaodo valor :")
 
         switch (operacao){
             case "+":

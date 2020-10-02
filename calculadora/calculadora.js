@@ -60,3 +60,11 @@ function calcParse(oper){
         goper = oper;
     }
 }
+
+/*
+var porcentagem = parseFloat('1.3') ;
+var total = preco * (porcentagem/100);
+
+var porcentagem = parseFloat('1,3') ;
+var total = preco * (porcentagem/100);
+*/
